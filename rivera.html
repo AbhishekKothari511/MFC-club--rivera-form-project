@@ -1,1 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riveria Registration</title>
+  <link rel="stylesheet" href="riv.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="wrap head-row">
+      <div class="brand">
+        <div class="badge">R</div>
+        <div>
+          <h1>Riveria Registration</h1>
+          <p class="sub">Student Details & Interests</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#details">Student</a>
+        <a href="#interests">Interests</a>
+        <a href="#submit">Submit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="details">
+      <h2>Student Details</h2>
+
+      <form class="form">
+        <div class="grid">
+          <label class="field req">
+            Full Name
+            <input type="text" placeholder="Abhishek Kothari" required>
+          </label>
+
+          <label class="field req">
+            Registration No.
+            <input type="text" placeholder="23BCE0000" required>
+          </label>
+
+          <label class="field req">
+            Email
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+
+          <label class="field req">
+            Phone
+            <input type="tel" placeholder="9876543210" required>
+          </label>
+
+          <label class="field req">
+            Campus
+            <select required>
+              <option value="">Select Campus</option>
+              <option>VIT Vellore</option>
+              <option>VIT Chennai</option>
+              <option>VIT AP</option>
+              <option>VIT Bhopal</option>
+            </select>
+          </label>
+
+          <label class="field req">
+            Year
+            <select required>
+              <option value="">Select Year</option>
+              <option>1st Year</option>
+              <option>2nd Year</option>
+              <option>3rd Year</option>
+              <option>4th Year</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="divider"></div>
+
+        <section id="interests">
+          <h2>Interests</h2>
+          <p class="hint">Select all activities you are interested in</p>
+
+          <div class="grid">
+            <label class="field">
+              Category
+              <select>
+                <option value="">Select</option>
+                <option>Cultural</option>
+                <option>Technical</option>
+                <option>Sports</option>
+                <option>Literary</option>
+              </select>
+            </label>
+
+            <label class="field">
+              Preferred Time
+              <select>
+                <option value="">Select</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="tags">
+            <label class="tag"><input type="checkbox"> Dance</label>
+            <label class="tag"><input type="checkbox"> Music</label>
+            <label class="tag"><input type="checkbox"> Photography</label>
+            <label class="tag"><input type="checkbox"> Drama</label>
+            <label class="tag"><input type="checkbox"> Coding</label>
+            <label class="tag"><input type="checkbox"> Sports</label>
+          </div>
+
+          <label class="field">
+            Short Note
+            <textarea rows="4" placeholder="Any preference or experience"></textarea>
+          </label>
+        </section>
+
+        <div class="divider"></div>
+
+        <div class="checks" id="submit">
+          <label class="check">
+            <input type="checkbox" required>
+            I confirm that the above information is correct
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Register</button>
+          <button type="reset" class="secondary">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="foot">
+      <p>© 2026 Riveria Cultural Fest</p>
+      <p><a href="#details">Back to Top</a></p>
+    </footer>
+  </main>
+
+</body>
+</html>
 
